@@ -1,8 +1,10 @@
 # pp_cmd_fft
 Postprocessing command "fft"
 
+Compute the 1-D discrete Fourier Transform.
+
 Usage example:
-`... | fft`
+`... | fft signal fs=100 n=100`
 
 ## Getting started
 ###  Prerequisites
@@ -26,5 +28,5 @@ Use `pp` to test fft command:
 pp
 Storage directory is /tmp/pp_cmd_test/storage
 Commmands directory is /tmp/pp_cmd_test/pp_cmd
-query: | otl_v1 <# makeresults count=100 #> |  fft 
+query: | otl_v1 <# makeresults count=100 #> |  fft signal fs=100 
 ```

@@ -6,7 +6,11 @@ from pp_exec_env.base_command import BaseCommand, Syntax
 
 
 class FftCommand(BaseCommand):
-    # define syntax of your command here
+    """
+    Compute the 1-D discrete Fourier Transform.
+
+    | fft signal fs=100 n=100
+    """
     syntax = Syntax(
         [
             Positional("signal", required=True, otl_type=OTLType.TEXT),
